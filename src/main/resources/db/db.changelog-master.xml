@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <include file="changelog/001-person-table.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/002-employee-table.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/003-pensioner-table.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/004-student-table.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/005-employee-position-table.xml" relativeToChangelogFile="true"/>
+
+
+</databaseChangeLog>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+
+    <changeSet id="createStudentTable" author="patryk">
+        <createTable tableName="student">
+            <column name="id" type="BIGINT">
+                <constraints unique="true" nullable="false"/>
+            </column>
+
+            <column name="academyName" type="VARCHAR(255)"/>
+            <column name="studyYear" type="INTEGER"/>
+            <column name="studyField" type="VARCHAR(255)"/>
+            <column name="scholarship" type="DECIMAL"/>
+
+
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  db:
+    image: mysql
+    ports:
+      - '3306:3306'
+
+    environment:
+      MYSQL_DATABASE: personsmanagement
+      MYSQL_ROOT_PASSWORD: haslo
